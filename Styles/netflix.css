@@ -20,9 +20,22 @@ nav{
 nav .button-container{
   display: flex;
   column-gap: 10px;
-
 }
-nav .sighin-button{
-  padding: 10px 20px;
+nav .button-container select{
+  background-color: rgb(229, 9, 20);
+  border: none;
+  padding: 7px 20px;
+  border-radius: 3px;
+}
+av .button-container select::focus{
+  outline: none;
+  border: 1px solid red;
+}
+nav .signin-button{
+  padding: 7px 20px;
   margin: 10px;
+  border: none;
+  background-color: rgb(229, 9, 20);
+  color: white;
+  border-radius: 3px;
 }
