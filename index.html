@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2023.ico">
-    <link rel="apple-touch-icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.png">
-    <link rel="stylesheet" href="Styles/netflix.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2023.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.png"
+    />
+    <link rel="stylesheet" href="Styles/netflix.css" />
     <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
-    <style>
-    </style>
+    <style></style>
   </head>
   <body>
-    <nav>
-      <div class="logo-container">
-        <img src="assets/Svg/logo.svg" alt="" class="logo">
-      </div>
-      <div class="button-container">
-        <div class="lang-select-container">
-          <img src="assets/Svg/language.svg" alt="">
-          <!--caretdownsmall-->
-          <select name="language" id="language" class="language">
-            <option value="en-in">English</option>
-            <option value="en-hi">हिंदी</option>
-          </select>
-        </div>
-        <button class="signin-button">Sign in</button>
-      </div>
-    </nav>
     <main>
-      <div class="hero"></div>
+      <section class="hero-section">
+        <div class="hero-background-image"></div>
+        <div class="hero-background-filter"></div>
+        <nav>
+          <div class="logo-container">
+            <img src="assets/Svg/logo.svg" alt="netflix-logo-red" class="logo" />
+          </div>
+          <div class="button-container">
+            <div class="lang-select-container">
+              <img
+                src="assets/Svg/language.svg"
+                alt="language logo"
+                class="lang-logo"
+              />
+              <select name="language" id="language" class="language">
+                <option value="en-in">English</option>
+                <option value="en-hi">हिंदी</option>
+              </select>
+              <div class="caretdown-container">
+                <img src="assets/Svg/caretdown.svg" alt="" class="caretdown" />
+              </div>
+            </div>
+            <button class="signin-button">Sign in</button>
+          </div>
+        </nav>
+        <div class="hero-content">
+          
+        </div>
+      </section>
     </main>
   </body>
 </html>
