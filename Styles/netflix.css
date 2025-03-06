@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+  --button-color:rgb(229, 9, 20);
+}
 *{
   margin: 0;
   padding: 0;
@@ -5,6 +12,8 @@
 }
 body{
   background-color: black;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+  height: 3000px;
 }
 nav{
   width: 85%;
@@ -46,7 +55,7 @@ nav .lang-select-container{
   top: 100%;
   left: 0;
   background: #232323;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 100%;
   min-width:100px;
   border-radius: 5px;
@@ -67,7 +76,7 @@ nav .signin-button{
   padding: 7px 17px;
   /* margin: 10px; */
   border: none;
-  background-color: rgb(229, 9, 20);
+  background-color: var(--button-color);
   font-weight: 600;
   color: white;
   border-radius: 3px;
@@ -100,22 +109,75 @@ main .hero-background-filter{
   height: 100%;
   width: 100%;
 }
-.curve-container{
+main .hero-content{
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 28px;
+}
+main .hero-content h1{
+  text-align: center;
+  font-size: 30px;
+}
+main .hero-content p{
+  text-align: center;
+  font-size: 16px;
+}
+main .hero-content .hero-first-para{
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+main .hero-content .hero-searchbar-section{
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  row-gap: 13px;
+  flex-wrap: wrap;
+}
+main .hero-content .search-bar{
+  height: 2rem;
+  width: 100%;
+  padding: 0 10px;
+  background-color: rgba(22,22,22,0.7);
+  border: 1px solid #5F5F5F;
+  border-radius: 4px;
+}
+main .hero-content .search-bar:focus{
+  outline: 2px solid white;
+  outline-offset: 1px;
+}
+main .hero-content .get-started-button{
+  font-weight: 700;
+  border: none;
+  display: flex;
+  align-items: center;
+  background-color: var(--button-color) ;
+  padding: 8px 10px;
+  border-radius: 3px;
+}
+main .hero-content .arrow{
+  height: 17px;
+  margin-left: 5px;
+}
+main .second-section .curve-container{
   height: 100px;
   width:100%;
   position:relative;
   margin-top:-30px;
 }
-.curve{
-  background: radial-gradient(50% 520% at 50% -420%,rgba(64,97,231,0.4) 80%,rgba(0,0,0,0.1) 100%),black;
+main .second-section .curve{
+  background: radial-gradient(50% 500% at 50% -420%,rgba(64,97,231,0.4) 80%,rgba(0,0,0,0.1) 100%),black;
   height: 100%;
   left:50%;
   transform: translateX(-50%);
   clip-path: ellipse(60% 90% at 50% 100%);
   position:absolute;
   width:160%;
+  z-index: -1;
 }
-.curve-border{
+main .second-section .curve-border{
   position:absolute;
   top:0;
   left:0;
@@ -127,4 +189,13 @@ main .hero-background-filter{
   margin-top:-0.25rem;
   clip-path: ellipse(60% 90% at 50% 100%);
   background:linear-gradient(to right,rgba(33,13,22,1) 16%,rgba(184,40,105,1),rgba(229,9,20,1),rgba(184,40,105,1),rgba(33,13,22,1) 84% );
+}
+main .second-section h3{
+  padding:50px 0 0 20px;
+}
+main .second-section .movies-container{
+  margin-top: -15px;
+  height: 100px;
+  padding: 20px;
+  background-color: red;
 }
