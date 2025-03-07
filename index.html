@@ -26,7 +26,7 @@
             <img src="assets/Svg/logo.svg" alt="netflix-logo-red" class="logo" />
           </div>
           <div class="button-container">
-            <div class="lang-select-container">
+            <div class="lang-select-container" tabindex="0">
               <img
                 src="assets/Svg/language.svg"
                 alt="language logo"
@@ -52,8 +52,12 @@
           <h1>Unlimited movies, TV shows and more</h1>
           <p class="hero-first-para">Starts at ₹149. Cancel at any time.</p>
           <p class="hero-second-para">Ready to watch? Enter your email to create or restart your membership.</p>
-          <div class="hero-searchbar-section">
-            <input type="text" class="search-bar" placeholder="Email address">
+          <div class="get-started-section">
+            <div class="input-container">
+              <input type="text" class="get-input" id="get-input">
+              <label for="get-input" class="input-label">Email address</label>
+            </div>
+            
             <button class="get-started-button">
               Get Started
               <img src="assets/Svg/arrow.svg.svg" alt="Arrow Logo" class="arrow">
@@ -67,7 +71,27 @@
           <div class="curve-border"></div>
           <h3>Trending Now</h3>
         </div>
-
+        <div class="movie-scroll-container">
+          <div class="scroll-button-container left-button-container">
+            <button class="scroll-button scroll-left-button">L</button>
+          </div>
+          
+          <div class="movies-container">
+            <div class="movie-image"></div>
+            <div class="movie-image"></div>
+            <div class="movie-image"></div>
+            <div class="movie-image"></div>
+            <div class="movie-image"></div>
+            <div class="movie-image"></div>
+            <div class="movie-image"></div>
+            <div class="movie-image"></div>
+            <div class="movie-image"></div>
+            <div class="movie-image"></div>
+          </div>
+          <div class="scroll-button-container right-button-container">
+            <button class="scroll-button scroll-right-button">R</button>
+          </div>
+        </div>
       </section>
       
 
