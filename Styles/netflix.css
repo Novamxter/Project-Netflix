@@ -230,18 +230,21 @@ main .second-section h3{
 /*--------scroll-section----------*/
 main .movie-scroll-container{
   display:flex;
-  background-color: yellow;
+  /* background-color: yellow: */
   position:relative;
   width:80%;
   margin: -15px auto 0 auto;
   /* overflow: hidden; */
 }
-.movies-container{
+main .movies-container{
   column-gap: 20px;
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
   padding: 10px 0;
+}
+main .movies-container::-webkit-scrollbar{
+  display: none;
 }
 /* .movies-container::-webkit-scrollbar {
   height: 8px;
@@ -250,45 +253,83 @@ main .movie-scroll-container{
   background: #ff0000;
   border-radius: 10px;
 } */
-.movie-image{
+main .movie-image{
   height:150px;
   min-width: 102px;
   width:100px;
   border-radius:5px;
-  background-color: blue;
 }
-.movie-image:hover {
+main .movie-image:hover {
   transform: scale(1.1);
 }
-.scroll-button-container{
+main .scroll-button-container{
   position: absolute;
   height:100%;
   width:60px;
   background-color:black;
   z-index:10;
 }
-.scroll-button{
+main .scroll-button{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: #232323;
+  background: #333333;
   border: none;
   cursor: pointer;
   padding: 10px;
-  height:50%;
+  height:70%;
+  width: 20%;
   border-radius:7px;
 }
-.left-button-container{
+main .left-button-container{
   left: -35px;
 }
-.right-button-container{
+main .right-button-container{
   right: -35px;
 }
-.scroll-left-button{
+main .scroll-left-button{
   right:10px;
 }
-.scroll-right-button{
+main .scroll-right-button{
   left:10px;
 }
-
+main .scroll-arrow{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  width: 17px;
+}
+main .scroll-left-arrow{
+  transform: translate(-50%,-50%) rotate(180deg);
+}
+/* ----------------reason-section--------------- */
+main .third-section{
+  padding: 8px 15px;
+}
+main .reason-main-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+main .reason-container{
+  background: linear-gradient(to bottom right,#192145,#210E17);
+  border-radius: 15px;
+  padding: 20px 20px 80px 20px;
+  position: relative;
+}
+main .reason-container h2{
+  margin-bottom: 7px
+}
+main .small-reason-png{
+  background-color: blue;
+}
+main .reason-png{
+  /* margin: 0 0 -20% 80%; */
+  height: 60px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
 
