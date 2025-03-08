@@ -1,5 +1,5 @@
 const scrollContainer = document.querySelector(".movies-container");
-const movies = document.querySelectorAll(".movie-image");
+const movies = document.querySelectorAll(".movie");
 const gap = 20; // Column gap from CSS
 const leftPadding = 5; // Space from the left side
 let isScrolling;
