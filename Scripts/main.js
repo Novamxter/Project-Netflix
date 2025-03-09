@@ -1,4 +1,4 @@
-import {langDropdown} from "./drop-down.js";
+import {langDropdown} from "./Drop-down.js";
 import {handleScroll} from "./movie-Scroll.js";
 import {handleAnswer} from "./handle-answer.js";
 import {renderDigits} from "./digits.js";
