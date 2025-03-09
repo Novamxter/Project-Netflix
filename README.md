@@ -1,8 +1,8 @@
-#**Netflix Clone**
+# **Netflix Clone**
 
 A responsive Netflix clone with smooth animations, interactive UI elements, and various JavaScript functionalities.
 
-##🚀 Features
+## 🚀 Features
 
 - **Hide/Unhide Answers –** FAQ section with collapsible answers.
 
@@ -19,16 +19,16 @@ A responsive Netflix clone with smooth animations, interactive UI elements, and 
 - **Curved Hero Section –** A visually appealing curve separates the hero and next section.
 
 
-##🔥 Upcoming Features
+## 🔥 Upcoming Features
 
-1. Fully Functional Language Dropdown – Change the website language dynamically.
+1. **Fully Functional Language Dropdown –** Change the website language dynamically.
 
-2. Movie Info on Click – Clicking a movie will display more details on the same page.
+2. **Movie Info on Click –** Clicking a movie will display more details on the same page.
 
-3. Complete Sign-In Page – A fully functional login/sign-up page with form validation.
+3. **Complete Sign-In Page –** A fully functional login/sign-up page with form validation.
 
 
-##🛠️ ** Technologies Used**
+## 🛠️ ** Technologies Used**
 
 - HTML, CSS, JavaScript
 
@@ -37,17 +37,15 @@ A responsive Netflix clone with smooth animations, interactive UI elements, and 
 -Intersection Observer API
 
 
-##📂 Installation & Usage
+## 📂 Installation & Usage
 
 1. Clone the repository:
-
 git clone https://github.com/your-username/netflix-clone.git  
 cd netflix-clone
-
 
 2. Open index.html in a browser.
 
 
-##🤝 Contributing
+## 🤝 Contributing
 
->Feel free to fork the repo and submit pull requests for improvements!
+> Feel free to fork the repo and submit pull requests for improvements!
