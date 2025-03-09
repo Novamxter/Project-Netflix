@@ -232,14 +232,13 @@ main .second-section h3{
 /*--------scroll-section----------*/
 main .movie-scroll-container{
   display:flex;
-  /* background-color: yellow: */
   position:relative;
-  width:80%;
+  width:90%;
   margin: -15px auto 0 auto;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 main .movies-container{
-  column-gap: 20px;
+  column-gap: 10px;
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
@@ -257,6 +256,10 @@ main .movies-container::-webkit-scrollbar{
 } */
 main .movie{
   position:relative;
+  min-width: 120px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 main .movie-image{
   height:150px;
@@ -265,11 +268,9 @@ main .movie-image{
   border-radius:5px;
 }
 main .digit{
-  /* font-size: 60px;
-  font-weight:900; */
   position:absolute;
   bottom:7px;
-  left:-13px;
+  left:0;
 }
 svg text{
   --digit-font-size:70px;
@@ -290,6 +291,7 @@ main .scroll-button-container{
   width:60px;
   background-color:black;
   z-index:10;
+  transition: transform 0.3s ease-in-out;
 }
 main .scroll-button{
   position: absolute;
@@ -304,10 +306,16 @@ main .scroll-button{
   border-radius:7px;
 }
 main .left-button-container{
-  left: -35px;
+  left: -13px;
 }
 main .right-button-container{
-  right: -35px;
+  right: -13px;
+}
+main .left-button-container.disabled{
+  transform: translateX(-150%);
+}
+main .right-button-container.disabled{
+  transform: translateX(150%);
 }
 main .scroll-left-button{
   right:10px;
@@ -446,5 +454,33 @@ footer .footer-selector-container{
 footer .n-i{
   padding:40px 0 85px 0;
   font-size: 14px;
-  color:rgba(255,255,255,0.5);
+}
+/*-----------floating-btn------------*/
+.floating-get-started-container{
+  position:fixed;
+  bottom:0;
+  width:100%;
+  height:180px;
+  background: linear-gradient(to bottom,rgba(0,0,0,0),black);
+  z-index:20;
+  transition: transform 0.5s ease-in-out;
+}
+.floating-btn{
+  background-color: var(--button-color);
+  height:40px;
+  border:none;
+  border-radius:5px;
+  width:87%;
+  position:absolute;
+  bottom:20px;
+  left:50%;
+  transform: translateX(-50%);
+  z-index:20;
+  font-size: 15px;
+  font-weight: 500;
+}
+.floating-get-started-container.hide-btn{
+  display: block;
+  transform: translateY(100%);
+  pointer-events: none;
 }

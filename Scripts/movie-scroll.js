@@ -1,7 +1,9 @@
 const scrollContainer = document.querySelector(".movies-container");
 const movies = document.querySelectorAll(".movie");
+const leftArrow = document.querySelector('.left-button-container');
+const rightArrow = document.querySelector('.right-button-container');
 const gap = 20; // Column gap from CSS
-const leftPadding = 5; // Space from the left side
+const leftPadding = 43; // Space from the left side
 let isScrolling;
 let isTouching = false; // Tracks if the user is still touching
 
@@ -85,9 +87,13 @@ document.querySelector(".scroll-right-button").addEventListener("click", () => {
     scrollContainer.scrollBy({ left: 120, behavior: "smooth" });
     setTimeout(() => requestAnimationFrame(alignMovies), 200); // Align after animation
 });
+    // Scroll event listener
+    scrollContainer.addEventListener("scroll", checkScroll);
+
+    // Initial check on load
+    checkScroll();
+
 }
-
-
 // Detect when scrolling stops (align only if user lifts their finger)
 function handleScrollStop() {
     if (!isTouching) {
@@ -97,3 +103,17 @@ function handleScrollStop() {
         }, 100); // Lower delay (100ms) for smoother effect
     }
 }
+function checkScroll() {
+        if (scrollContainer.scrollLeft === 0) {
+            leftArrow.classList.add("disabled");  // No scroll left
+        } else {
+            leftArrow.classList.remove("disabled");
+        }
+
+        if (scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth) {
+            rightArrow.classList.add("disabled"); // No scroll right
+        } else {
+            rightArrow.classList.remove("disabled");
+        }
+    }
+
