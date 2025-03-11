@@ -28,13 +28,13 @@ A responsive Netflix clone with smooth animations, interactive UI elements, and 
 3. **Complete Sign-In Page –** A fully functional login/sign-up page with form validation.
 
 
-## 🛠️ ** Technologies Used**
+## 🛠️ Technologies Used
 
 - HTML, CSS, JavaScript
 
 - Local Storage API
 
--Intersection Observer API
+- Intersection Observer API
 
 
 ## 📂 Installation & Usage
