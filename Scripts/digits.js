@@ -9,7 +9,7 @@ export function renderDigits(){
   });
 }
 function createSvg(num){
-  return `<svg width="80" height="80" xmlns="http://www.w3.org/2000/svg">
+  return `<svg width="100" height="90" xmlns="http://www.w3.org/2000/svg">
     <text x="1" y="70" font-size="var(--digit-font-size)" stroke="white" stroke-width="2" fill="black" class="${num === 4 ? 'four':''} ${num === 8?'eight':''}">
       ${num}
     </text>

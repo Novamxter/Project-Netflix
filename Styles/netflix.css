@@ -145,6 +145,7 @@ main .get-started-section{
   display: flex;
   justify-content: center;
   row-gap: 17px;
+  column-gap: 13px;
   flex-wrap: wrap;
 }
 main .input-container{
@@ -269,7 +270,7 @@ main .movie-image{
 }
 main .digit{
   position:absolute;
-  bottom:7px;
+  bottom:3px;
   left:0;
 }
 svg text{
@@ -340,15 +341,17 @@ main .third-section{
 }
 main .reason-main-container{
   display: flex;
-  flex-direction: column;
   gap: 10px;
   margin-top: 10px;
+  flex-wrap: wrap;
+
 }
 main .reason-container{
   background: linear-gradient(to bottom right,#192145,#210E17);
   border-radius: 15px;
   padding: 20px 20px 80px 20px;
   position: relative;
+  width: 100%;
 }
 main .reason-container h2{
   font-size: 20px;
@@ -384,6 +387,7 @@ main .question{
   width:100%;
   box-sizing: border-box;
   border:none;
+  border-radius: 7px;
 }
 main .question-container p{
   font-size: 19px;
