@@ -12,7 +12,6 @@
 body{
   background-color: black;
   font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
-  height: 3000px;
 }
 nav{
   width: 85%;
@@ -237,6 +236,7 @@ main .movie-scroll-container{
   width:90%;
   margin: -15px auto 0 auto;
   overflow: hidden;
+  /* background-color: skyblue; */
 }
 main .movies-container{
   column-gap: 10px;
@@ -344,7 +344,6 @@ main .reason-main-container{
   gap: 10px;
   margin-top: 10px;
   flex-wrap: wrap;
-
 }
 main .reason-container{
   background: linear-gradient(to bottom right,#192145,#210E17);
@@ -413,6 +412,7 @@ main .question-container .answer{
   overflow: hidden;
   transition: max-height 0.7s ease,padding 0.5s ease;
   padding: 0 22px;
+  border-radius:5px;
 }
 main .question-container .answer p{
   font-size: 18px;

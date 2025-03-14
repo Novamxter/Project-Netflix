@@ -1,101 +1,152 @@
-@media screen and (min-width:655px){
-    nav{
-        height: 90px;
-    }
-    nav .button-container{
-        height: 40%;
-    }
-    nav .logo{
-        height: 30px;
-    }
-    .selected-lang{
-        display: block;
-        font-weight: 600;
-    }
-    nav .signin-button{
-        font-size: 18px;
-    }
-    main .hero-content h1{
-        font-size: 36px;
-    }
-    main .hero-content p{
-        font-size: 18px;
-    }
-    main .movies-container{
-        column-gap: 20px;
-    }
-    main .movie{
-        min-width: 147px;
-    }
-    main .movie-image{
-        height: 180px;
-        min-width: 132px;
-    }
+@media screen and (min-width: 655px) {
+  nav {
+    height: 90px;
+  }
+  nav .button-container {
+    height: 40%;
+  }
+  nav .logo {
+    height: 30px;
+  }
+  .selected-lang {
+    display: block;
+    font-weight: 600;
+  }
+  nav .signin-button {
+    font-size: 18px;
+  }
+  main .hero-content h1 {
+    font-size: 36px;
+  }
+  main .hero-content p {
+    font-size: 18px;
+  }
+  main .movies-container {
+    column-gap: 20px;
+  }
+  main .movie {
+    min-width: 147px;
+  }
+  main .movie-image {
+    height: 180px;
+    min-width: 132px;
+  }
+  main .second-section h3{
+    padding:50px 0 0 35px;
+  }
+  main .third-section,main .fourth-section,main .fifth-section{
+    padding: 15px 40px;
+  }
+  footer{
+    padding:0 45px;
+  }
 }
-@media screen and (min-width:768px){
-    nav{
-        height: 100px;
-    }
-    nav .logo{
-        height: 35px;
-    }
-    h3{
-        font-size: 25px;
-    }
-    main .get-started-section{
-        margin-top: 25px;
-        flex-wrap: nowrap;
-        width: 80%;
-        max-width: 700px;
-    }
-    main .get-started-button{
-        min-width: 160px;
-    }
-    main .hero-content p{
-        font-size: 18px;
-    }
-    main .movies-container{
-        column-gap: 22px;
-        padding: 25px 0;
-    }
-    main .movie-image:hover {
-        transform: scale(1.15);
-    }
-    main .movie-scroll-container{
-        width: 93%;
-    }
-    main .movie{
-        min-width: 200px;
-    }
-    main .movie-image{
-        height: 250px;
-        min-width: 175px;
-    }
-    svg text{
-        --digit-font-size:92px;
-    }
-    svg .four,svg .eight{
-        --digit-font-size:93px;
-    }
+@media screen and (min-width: 768px) {
+  nav {
+    height: 100px;
+  }
+  nav .logo {
+    height: 35px;
+  }
+  main .hero-content{
+    width:60%;
+    margin:auto;
+  }
+  main .hero-content h1{
+    font-weight: 900;
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  main .get-started-section {
+    margin-top: 25px;
+    flex-wrap: nowrap;
+    width: 80%;
+    max-width: 700px;
+  }
+  main .get-started-button {
+    min-width: 160px;
+  }
+  main .hero-content p {
+    font-size: 18px;
+  }
+  main .movies-container {
+    column-gap: 22px;
+    padding: 25px 0;
+  }
+  main .movie-image:hover {
+    transform: scale(1.15);
+  }
+  main .movie {
+    min-width: 200px;
+  }
+  main .movie-image {
+    height: 250px;
+    min-width: 175px;
+  }
+  svg text {
+    --digit-font-size: 92px;
+  }
+  svg .four,
+  svg .eight {
+    --digit-font-size: 93px;
+  }
+  main .fifth-section p{
+    text-align: center;
+  }
+  main .second-get-started{
+    margin:20px auto 0 auto;
+  }
+  footer .footer-links{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
-@media screen and (min-width:1024px){
-    main .reason-container h2{
-        font-size: 28px
-    }
-    main .reason-container p{
-        font-size: 20px;
-    }
-    main .reason-png{
-        height: 75px;
-        bottom: 15px;
-        right: 15px;
-    }
-    main .reason-main-container{
-        row-gap: 20px;
-    }
-    main .reason-container{
-        width: 45%;
-        margin: auto;
-        min-height: 130px;
-    }
+@media screen and (min-width: 978px){
+  main .hero-content{
+    width:50%;
+  }
+  main .hero-content h1{
+    font-size: 45px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .second-section h3{
+    padding:50px 0 0 45px;
+  }
+  main .third-section,main .fourth-section,main .fifth-section{
+    padding: 15px 50px;
+  }
+  main .reason-container h2 {
+    font-size: 28px;
+  }
+  main .reason-container p {
+    font-size: 20px;
+  }
+  main .reason-png {
+    height: 65px;
+    bottom: 15px;
+    right: 15px;
+  }
+  main .reason-main-container {
+    row-gap: 20px;
+  }
+  main .reason-container {
+    width: 45%;
+    margin: auto;
+    min-height: 130px;
+  }
+  footer{
+    padding:0 55px;
+  }
+}
+@media screen and (min-width: 1168px){
+  main .hero-content{
+    width:40%;
+  }
+  footer .footer-links{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
