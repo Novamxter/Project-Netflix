@@ -37,6 +37,12 @@ A responsive Netflix clone with smooth animations, interactive UI elements, and 
 - Intersection Observer API
 
 
+## 🔗 Live Demo
+
+Experience the Netflix Clone in action:  
+[https://novamxter.github.io/Project-Netflix/](https://novamxter.github.io/Project-Netflix/)
+
+
 ## 📂 Installation & Usage
 
 1. Clone the repository:
