@@ -15,8 +15,6 @@
     <link rel="stylesheet" href="Styles/netflix.css" />
     <link rel="stylesheet" href="Styles/mediaQuries.css" />
     <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
-    <style></style>
-    <link rel="stylesheet" href="Styles/Render-HW.css" />
   </head>
   <body>
     <main>
@@ -362,32 +360,7 @@
     <section class="floating-get-started-container">
       <button class="floating-btn">Get Started</button>
     </section>
-    <div class="hw">
-      <span> Screen width: <span id="screen-width"></span>px </span>
-      <span>Screen height: <span id="screen-height"></span>px</span>
-    </div>
-    <button class="render-hw-button"></button>
+    
     <script type="module" src="Scripts/main.js"></script>
-    <script>
-      document.getElementById("screen-width").textContent = window.innerWidth;
-      document.getElementById("screen-height").textContent = window.innerHeight;
-      window.addEventListener("resize", () => {
-        document.getElementById("screen-width").textContent = window.innerWidth;
-        document.getElementById("screen-height").textContent =
-          window.innerHeight;
-      });
-    </script>
-    <script>
-      const hw = document.querySelector(".hw");
-      const hwbutton = document.querySelector(".render-hw-button");
-
-      hwbutton.addEventListener("click", () => {
-        if (hw.style.display === "none" || hw.style.display === "") {
-          hw.style.display = "flex";
-        } else {
-          hw.style.display = "none";
-        }
-      });
-    </script>
   </body>
 </html>

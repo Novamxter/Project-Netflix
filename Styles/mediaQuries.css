@@ -31,14 +31,16 @@
     height: 180px;
     min-width: 132px;
   }
-  main .second-section h3{
-    padding:50px 0 0 35px;
+  main .second-section h3 {
+    padding: 50px 0 0 35px;
   }
-  main .third-section,main .fourth-section,main .fifth-section{
+  main .third-section,
+  main .fourth-section,
+  main .fifth-section {
     padding: 15px 40px;
   }
-  footer{
-    padding:0 45px;
+  footer {
+    padding: 0 45px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -48,11 +50,11 @@
   nav .logo {
     height: 35px;
   }
-  main .hero-content{
-    width:60%;
-    margin:auto;
+  main .hero-content {
+    width: 60%;
+    margin: auto;
   }
-  main .hero-content h1{
+  main .hero-content h1 {
     font-weight: 900;
     font-size: 40px;
   }
@@ -92,30 +94,32 @@
   svg .eight {
     --digit-font-size: 93px;
   }
-  main .fifth-section p{
+  main .fifth-section p {
     text-align: center;
   }
-  main .second-get-started{
-    margin:20px auto 0 auto;
+  main .second-get-started {
+    margin: 20px auto 0 auto;
   }
-  footer .footer-links{
-    display:grid;
+  footer .footer-links {
+    display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
-@media screen and (min-width: 978px){
-  main .hero-content{
-    width:50%;
+@media screen and (min-width: 978px) {
+  main .hero-content {
+    width: 50%;
   }
-  main .hero-content h1{
+  main .hero-content h1 {
     font-size: 45px;
   }
 }
 @media screen and (min-width: 1024px) {
-  main .second-section h3{
-    padding:50px 0 0 45px;
+  main .second-section h3 {
+    padding: 50px 0 0 45px;
   }
-  main .third-section,main .fourth-section,main .fifth-section{
+  main .third-section,
+  main .fourth-section,
+  main .fifth-section {
     padding: 15px 50px;
   }
   main .reason-container h2 {
@@ -137,16 +141,16 @@
     margin: auto;
     min-height: 130px;
   }
-  footer{
-    padding:0 55px;
+  footer {
+    padding: 0 55px;
   }
 }
-@media screen and (min-width: 1168px){
-  main .hero-content{
-    width:40%;
+@media screen and (min-width: 1168px) {
+  main .hero-content {
+    width: 40%;
   }
-  footer .footer-links{
-    display:grid;
+  footer .footer-links {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
